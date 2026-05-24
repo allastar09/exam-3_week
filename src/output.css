@@ -234,6 +234,9 @@
   .gap-y-\[20px\] {
     row-gap: 20px;
   }
+  .gap-y-\[50px\] {
+    row-gap: 50px;
+  }
   .rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -296,9 +299,19 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
+    }
+  }
+  .lg\:inline {
+    @media (width >= 64rem) {
+      display: inline;
     }
   }
   .lg\:w-\[1\] {
@@ -361,9 +374,19 @@
       flex-direction: row;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:justify-evenly {
+    @media (width >= 64rem) {
+      justify-content: space-evenly;
     }
   }
   .lg\:gap-\[20px\] {
